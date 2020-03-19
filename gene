@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/Users/uu173225/work/tools/genec/genec $1 $2
+
