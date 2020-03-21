@@ -1,4 +1,7 @@
 #!/bin/bash
 
-/Users/uu173225/work/tools/genec/genec $1 $2
+CURDIR=$(cd $(dirname $0); pwd)
 
+RESULT=$(${CURDIR}/genec $1 $2)
+
+echo "done🙌"

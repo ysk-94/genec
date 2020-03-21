@@ -11,7 +11,5 @@ int main(int argc, char *argv[]) {
   writeFile << "indent_style=" << argv[1];
   writeFile << "\n";
   writeFile << "indent_size=" << argv[2];
-
-  std::cout << "done✨" << std::endl;
 }
 
