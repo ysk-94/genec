@@ -1,4 +1,29 @@
 #!/bin/bash
 
-/Users/uu173225/work/tools/genec/genec $1 $2
+function usage {
+  cat << EOM
+Usage: $(basename"$0") [OPTION]...
+  -h        Display help
+  -size     Specify size
+  -style    Specify style
+EOM
+
+  exit 2;
+}
+
+while getopts ":size:style:h" optKey; do
+  case "$optKey" in
+    size)
+      SIZE=${OPTARG}
+      ;;
+    style)
+      STYLE=${OPTARG} 
+      ;;
+  esac
+done
+
+echo $SIZE
+echo $STYLE
+
+/Users/uu173225/work/tools/genec/genec $STYLE $SIZE 
 
